@@ -1,0 +1,2095 @@
+/*
+Theme Name: LeetPress (Red)
+Design: Sebastian R
+Converted to Killboard theme: Vecati
+*/
+
+
+html, body
+{
+	background: #dadada;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font: 12px Arial, sans-serif; 
+	color: #3a3a3a;
+
+}
+
+font, th, td, p, a, div
+{
+	
+}
+
+td
+{
+	padding: 1px;
+}
+
+.main-table
+{
+	border-bottom: 0 solid #555;
+	border-collapse: separate;
+	border-left: 1px solid #555;
+	border-right: 1px solid #555;
+	border-spacing: 0;
+	border-top: 0 solid #555;
+	height: 100%;
+	padding: 0;
+	width: 950px;
+}
+
+.kill-points
+{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+input, button, select
+{
+	border: 1px solid #abadb3;
+	font-size: 9px;
+}
+
+#content
+{
+	background: #fff;
+	font-size: 12px;
+	width: 765px;
+}
+
+#context, .context_element
+{
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 2px;
+	width: 145px;
+}
+
+.context_element
+{
+	margin-bottom: 10px;
+	width: 145px;
+}
+
+div.bar
+{
+	background: #7F0F1E;
+	border-bottom: 1px #1a1a1a solid;
+	border-right: 1px #1a1a1a solid;
+	font-size: 4px;
+	height: 7px;
+}
+
+div.bar-background
+{
+	background: #a2a2a2;
+	font-size: 4px;
+	height: 7px;
+}
+
+.awardbox-list div.bar-background
+{
+	width: 60px;
+}
+
+.contractlist div.bar-background
+{
+	width: 75px;
+}
+
+.contract-list-efficiency div.bar-background
+{
+	width: 120px;
+}
+
+
+div.bar-red
+{
+	background: #300;
+	border-bottom: 1px #200 solid;
+	border-right: 1px #200 solid;
+	height: 8px;
+}
+
+.box-title
+{
+	background: #333;
+	font-size: 12px;
+	font-weight: bold;
+	height: 20px;
+	text-align: center;
+}
+
+.box-content
+{
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 150px;
+}
+
+.menu-wrapper
+{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.menu-caption
+{
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-left: 5px;
+}
+
+.menu-item
+{
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+#page-title
+{
+width: 900px;
+background: url(images/section-title.png) repeat;
+padding: 9px 9px 6px 9px;
+margin-bottom: 20px;
+text-shadow: 1px 1px 1px white;
+font-size: 28px;
+font-family: "BebasNeueRegular";
+
+}
+
+/* caption over boxes - Involved parties */
+.block-header
+{
+	color: #6d6d6d;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/* for exampe Awards for April 2007 */
+.block-header2
+{
+	border-bottom: 0px solid #777;
+	color: #6d6d6d;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-bottom: 5px;
+}
+
+.f_killmail
+{
+	font-size: 10px;
+}
+
+textarea.killmail
+{
+	font-size: 11px;
+}
+
+.link
+{
+	padding-right: 5px;
+}
+
+.kb-table, .kb-subtable
+{
+	color: #6d6d6d;
+	font-size: 10px;
+	padding: 0;
+}
+
+.kb-table
+{
+	border-collapse: separate;
+	border-spacing: 0px;
+	border: 0px solid #;
+width: 100%;
+}
+
+.kb-table-title
+{
+	height: 10px;
+}
+
+/* Ship type */
+.kb-table-header
+{
+	background: url(images/section-title.png) repeat;
+	color: #3A3A3A;
+	text-shadow: 1px 1px 1px white;
+	font-size: 10px;
+font-weight: bold;
+	height: 15px;
+	padding: 4px;
+
+
+}
+
+.killpilotbg
+{
+	background: #fff;
+	color: #6d6d6d;
+}
+
+.kb-table-row-odd
+{
+	background: #fff;
+	color: #6d6d6d;
+}
+
+.kb-table-row-even
+{
+	background: #fff;
+	color: #6d6d6d;
+}
+
+.kb-table-rows > tbody > tr:nth-child(even)
+{
+	background: #fff;
+}
+
+.kb-table-rows > tbody > tr:nth-child(odd)
+{
+	background: #fff;
+}
+
+.kb-table-row-slot
+{
+	background: #fff;
+}
+
+.kb-table-row-destroyed
+{
+	background: #fff;
+}
+
+.kb-table-row-dropped
+{
+	background: green;
+}
+
+.kb-table-row-hover,
+.contractlist tr:hover,
+.kb-table-rows > tbody > tr:hover,
+.kb-kl-table tbody .kb-table-row-even:hover,
+.kb-kl-table .kb-table-row-odd:hover
+{
+	background: url(images/section-title.png) repeat;
+	cursor: pointer;
+}
+
+img.finalblow
+{
+	border: 1px solid #e01e23;
+	height: 64px;
+	width: 64px;
+}
+
+img.avatar
+{
+	border: 0px solid #333;
+}
+
+img.icon
+{
+	border: 0px solid #333;
+}
+
+td.item-icon,
+th.item-icon
+{
+	border: 0px solid #333;
+	height: 32px;
+	width: 32px;
+}
+
+div.item-icon
+{
+	border: none;
+	height: 32px;
+	width: 32px;
+}
+
+img.icon-hover
+{
+	border: 1px solid #DD9300;
+	cursor: pointer;
+}
+
+td.avatar-name
+{
+	color: #6d6d6d;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+td.killmail
+{
+	color: #6d6d6d;
+	font-family:"Courier New", Courier;
+	font-size: 11px;
+}
+
+td.battleship
+{
+	background: #DD9300;
+}
+
+.kb-table td,
+.kb-table th
+{
+	padding: 2px;
+}
+
+td.kb-table-imgcell
+{
+	height: 32px;
+	padding: 0;
+	vertical-align: middle;
+	width: 32px;
+}
+
+td.kb-table-imgcell > img
+{
+	margin-bottom: -3px;
+}
+
+.kb-date-header
+{
+	font-size: 20px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 15px;
+	float: left;
+font-family: "BebasNeueRegular";
+}
+
+.kb-campaigns-header
+{
+	font-size: 18px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 15px;
+	float: left;
+font-family: "BebasNeueRegular";
+}
+
+.kb-kills-header
+{
+	font-size: 20px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 15px;
+display: block;
+font-family: "BebasNeueRegular";
+}
+
+.kb-losses-header
+{
+	font-size: 20px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 15px;
+display: block;
+font-family: "BebasNeueRegular";
+}
+
+.kb-contract-target-header
+{
+	background-image:url("../../img/contract-target.gif");
+	background-position: 0 -3px;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #777;
+	color: #6d6d6d;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+
+.kl-kill, .kl-loss, .kl-kill-null, .kl-loss-null
+{
+	text-align: center;
+}
+
+.kl-kill-null, .kl-loss-null
+{
+	color: #6d6d6d;
+}
+
+td.kl-kill-null-bg
+{
+	background: #030;
+	color: #6d6d6d;
+}
+
+td.kl-loss-null-bg
+{
+	background: #300;
+	color: #999;
+}
+
+td.kl-kill
+{
+	color: #0a0;
+	font-weight: bold;
+}
+
+.kl-loss
+{
+	color: #a00;
+	font-weight: bold;
+}
+
+td.kl-kill-bg
+{
+	background: #030;
+	color: #0b0;
+	font-weight: bold;
+}
+
+td.kl-loss-bg
+{
+	background: #300;
+	color: #b00;
+	font-weight: bold;
+}
+
+#weeknav
+{
+	right: 0;
+	top: 20px;
+}
+
+td.weeknav
+{
+	color: #666;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+select.kb-select
+{
+	font-size: 10px;
+	width: 210px;
+}
+
+input.kb-input
+{
+	font-size: 10px;
+}
+
+a.kb-table-row-hover:link
+{
+	color: #333;
+}
+
+a:link { 
+	color: #b70000;
+	text-decoration: none;
+	}
+a:visited { 
+	color: #b70000;
+	text-decoration: none;
+	}
+a:hover { 
+	color: #b70000;
+	text-decoration: underline;
+	}
+a:active { 
+	color: #b70000;
+	text-decoration: none;
+	}
+
+.counter
+{
+	border-color: #666;
+	border-top: solid 0px;
+	display: block;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	text-align: right;
+	text-decoration: none;
+}
+
+.comment
+{
+padding: 8px;
+border: 1px solid 
+#D9D9D9;
+margin-right: 12px;
+font-family: Arial;
+}
+.comment:focus
+{
+	border-color: #FFF;
+}
+
+.comment-button
+{
+padding: 8px;
+border: 1px solid  
+#D9D9D9;
+margin-right: 12px;
+font-family: Arial;
+margin-top: 10px;
+}
+
+.comment-button:focus
+{
+	border-color: #FFF;
+}
+
+
+.comment-button2 {
+	background: url(images/black-button.png) repeat-x;
+	border: 1px solid black;
+	padding: 11px 10px 7px 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-family: "BebasNeueRegular";
+	font-size: 18px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	cursor: pointer;
+}
+
+.comment-button2:hover {
+	background: url(images/black-button.png) repeat-x;
+	background-position: 0 -42px;
+}
+
+.input-pilotname
+{
+padding: 8px;
+border: 1px solid  
+#D9D9D9;
+margin-right: 12px;
+font-family: Arial;
+}
+
+.input-pilotname:focus
+{
+	border-color: #FFF;
+}
+
+#comments-wrap
+{
+	border-top: #333 thin solid;
+	clear: left;
+	color: #6d6d6d;
+	float: left;
+	font-size: 12px;
+	margin-top: 15px;
+	width: 250px;
+}
+
+.comment-text
+{
+	border-bottom-color: #333;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	overflow: hidden;
+	padding: 5px;
+}
+
+#countdown
+{
+	background-color: #fff;
+	border: 0;
+	color: #980000;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size: 12px;
+}
+
+.popup-table
+{
+	-moz-opacity:.9;
+	background-color: #333;
+	filter:alpha(opacity=90)
+}
+
+.killcount
+{
+	color: #6d6d6d;
+	font-size: 9px;
+	font-weight: bold;
+	padding-right: 4px;
+}
+
+.losscount
+{
+	color: #980000;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+.kb-summary-summary > .losscount
+{
+	text-align: left;
+}
+
+.kb-summary-summary > .killcount
+{
+	text-align: right;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-kill:nth-child(even)
+{
+	background: #;
+	text-shadow: 1px 1px 1px white;
+	font-weight: bold;
+	color: #6D6D6D;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-kill:nth-child(odd)
+{
+	background: #;
+	text-shadow: 1px 1px 1px white;
+	font-weight: bold;
+	color: #6D6D6D;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-loss:nth-child(even)
+{
+	background: #e4cccc;
+	text-shadow: 1px 1px 1px white;
+	font-weight: bold;
+	color: #6D6D6D;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-loss:nth-child(even)
+{
+	background: #e4cccc;
+	text-shadow: 1px 1px 1px white;
+	font-weight: bold;
+	color: #6D6D6D;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-loss:nth-child(odd)
+{
+	background: #e4cccc;
+	text-shadow: 1px 1px 1px white;
+	font-weight: bold;
+	color: #6D6D6D;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-kill:hover
+{
+	background: url(images/section-title.png) repeat;
+	cursor: pointer;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-loss:hover
+{
+	background: url(images/section-title.png) repeat;
+	cursor: pointer;
+}
+
+div.kb-shiptype
+{
+	float: left;
+	margin-top: 3px;
+	padding-left: 3px;
+}
+
+div.kb-shipicon
+{
+	float: right;
+	height: 32px;
+}
+
+td.kb-shipfilter
+{
+	font-family:Verdana,Tahoma;
+	font-size: 12px;
+}
+
+a.kb-shipclass:visited
+{
+	color: #6d6d6d;
+}
+
+a.kb-shipclass:link
+{
+	color: #6d6d6d;
+}
+
+a.kb-shipclass-hl:link
+{
+	color: #980000;
+	text-decoration: underline;
+}
+
+a.kb-shipclass-hl:active
+{
+	color: #980000;
+	text-decoration: underline;
+}
+
+a.kb-shipclass-hl:visited
+{
+	color: #980000;
+	text-decoration: underline;
+}
+
+a.kb-shipclass:active
+{
+	color: #6d6d6d;
+}
+
+a.kb-shipclass:hover
+{
+	color: #6d6d6d;
+	text-decoration: underline;
+}
+
+a.kb-contract:link
+{
+	font-size: 12px;
+}
+
+a.kb-contract:visited
+{
+	font-size: 12px;
+}
+
+#content
+{
+	float: left;
+}
+
+#context, .context_element
+{
+	float: right;
+}
+
+.context_element > *
+{
+	margin-bottom: 10px;
+	width: 150px;
+}
+
+#main
+{
+	background: #fff;
+	border-bottom: 0 solid #555;
+	border-collapse: separate;
+	border-left: 0px solid #555;
+	border-right: 0px solid #555;
+	border-spacing: 0;
+	border-top: 0 solid #555;
+	margin: auto;
+	padding: 0;
+	width: 900px;
+float: left;
+}
+
+.stats
+{
+	margin-bottom: 5px;
+	width: 765px;
+}
+
+.summarytable
+{
+	margin-bottom: 5px;
+}
+
+.klsplitter
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.kltable
+{
+	text-align: center;
+}
+
+#profile
+{
+	clear: both;
+	color: #6d6d6d;
+	float: right;
+	font-size: 10px;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.kb-kl-table a:link,
+.kb-kl-table a:visited
+{
+	color: #6d6d6d;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+.counter
+{
+	clear: both;
+}
+
+.kl-detail-victim, .kl-detail-invsum, .kl-detail-inv, .kl-detail-comments,
+.kl-detail-vicship, .kl-detail-shipdetails, .kl-detail-fitting
+{
+	margin-bottom: 10px;
+}
+
+#kl-detail-left, #kl-detail-right
+{
+	text-align: left;
+	vertical-align: top;
+}
+
+#kl-detail-left
+{
+	display: inline-block;
+	margin: 0 0px 10px 0;
+	width: 380px;
+}
+
+#kl-detail-right
+{
+	display: inline-block;
+	margin: 0 0 10px 0;
+	width: 380px;
+}
+
+#popup
+{
+	display: none;
+	left: 350px;
+	padding: 5px;
+	position: absolute;
+	text-align: center;
+	top: 217px;
+	width: 99%;
+	z-index: 5;
+}
+
+.mod_name
+{
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+div.awardbox
+{
+	float: left;
+	height: 480px;
+	margin: 0 20px 10px 20px;
+	text-align: center;
+	vertical-align: top;
+	width: 150px;
+}
+
+.no_stretch
+{
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.contractlist
+{
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+}
+
+.contractlist tr td:first-child
+{
+	text-align: left;
+}
+
+.contractlist tr.kb-table-header td.kb-date
+{
+	width: 80px;
+}
+
+.contractlist tr.kb-table-header td.killcount
+{
+	width: 50px;
+color: 
+#3A3A3A;
+text-shadow: 1px 1px 1px 
+white;
+font-size: 10px;
+font-weight: bold;
+}
+
+.contractlist tr.kb-table-header td.iskcount
+{
+	width: 70px;
+}
+
+.contractlist tr.kb-table-header td.efficiency
+{
+	width: 120px;
+}
+
+.contractlist td.kb-date
+{
+	text-align: center;
+}
+
+.contractlist efficiency
+{
+	text-align: left;
+	width: 75px;
+}
+
+.contractlist .efficiency_percent
+{
+	width: 40px;
+}
+
+.contractlist .name
+{
+	font-weight: bold;
+}
+
+.contract-stats
+{
+	border-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.contract-stats td
+{
+	text-align: left;
+}
+
+.contract-stats .kb-date
+{
+	width: 120px;
+}
+
+.contract-stats .contract-data-name
+{
+	width: 206px;
+}
+
+td.contract-logo
+{
+	height: 80px;
+	text-align: center;
+	width: 80px;
+}
+
+.contract-list-summary td.kl-kill-bg,
+.contract-list-summary td.kl-loss-bg
+{
+	text-align: center;
+	width: 60px;
+}
+
+.contract-summary-name
+{
+	font-weight: bold;
+	width: 112px;
+}
+
+.contract-list-efficiency .efficiency_percent,
+.contract-list-efficiency .efficiency_bar
+{
+	font-weight: bold;
+	width: 120px;
+}
+
+.kb-box
+{
+	border-spacing: 1px;
+	margin-bottom: 10px;
+	width: 150px;
+}
+
+.kb-box > tr > td
+{
+	text-align: left;
+}
+
+.kb-box .kb-table-header
+{
+	text-align: center;
+}
+
+img
+{
+	border: 0;
+}
+
+.summarytable td
+{
+	vertical-align: top;
+}
+
+.kb-summary-summary
+{
+	text-align: center;
+	width: 100%;
+}
+
+.kb-summary-summary > div
+{
+	display: inline-block;
+	width: 48%;
+}
+
+.kb-summary-clear
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.summarysubtable
+{
+	border-spacing: 0px;
+	width: 100%;
+}
+
+.summarytable > table
+{
+	border-collapse: collapse;
+	width: 765px;
+}
+
+.summarytable-verbose
+{
+	text-align: center;
+	width: 60px;
+}
+
+.summarytable-brief
+{
+	text-align: center;
+	width: 30px;
+}
+
+.kb-kl-table
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 765px;
+}
+
+.kl-shiptype
+{
+	width: 190px;
+}
+
+.kl-victim
+{
+	width: 208px;
+}
+
+.kl-finalblow
+{
+	width: 175px;
+}
+
+.kl-location
+{
+	height: auto;
+	text-align: left;
+	width: 164px;
+}
+
+.kl-shiptype-text
+{
+	width: 157px;
+}
+
+.kl-victim-text
+{
+	width: 175px;
+}
+
+.kb-kl-table tr.kb-table-header > td
+{
+	text-align: center;
+}
+
+.kb-kl-table td
+{
+	vertical-align: middle;
+}
+
+.kl-inv-comm
+{
+	float: left;
+	vertical-align: middle;
+}
+
+.kl-inv-comm img
+{
+	vertical-align: middle;
+}
+
+.kl-date
+{
+	float: right;
+}
+
+table.awardbox td.kb-table-header
+{
+	text-align: center;
+}
+
+table.awardbox table
+{
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+}
+
+.awardbox-top td
+{
+	font-weight: bold;
+	text-align: center;
+}
+
+.awardbox-num
+{
+	width: 15px;
+}
+
+.awardbox-count
+{
+	text-align: right;
+}
+
+.awardbox-comment
+{
+	text-align: center;
+}
+
+.awardbox .kb-table-header
+{
+	text-align: center;
+}
+
+.kb-clock
+{
+	text-align: center;
+}
+
+.kb-clock .kb-subtable
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#clock
+{
+	font-weight: bold;
+}
+
+.alliance-detail .logo,
+.corp-detail .logo,
+.pilot-detail .logo
+{
+	background-color: #fff;
+	height: 128px;
+	text-align: center;
+	width: 128px;
+}
+
+.alliance-detail .attribute-name,
+.corp-detail .attribute-name
+{
+	width: 130px;
+}
+
+.pilot-detail .attribute-name
+{
+	width: 180px;
+}
+
+.alliance-detail .attribute-data-short,
+.corp-detail .attribute-data-short
+{
+	width: 90px;
+}
+
+.alliance-detail .attribute-data-long,
+.corp-detail .attribute-data-long
+{
+	width: 270px;
+}
+
+.alliance-detail td,
+.corp-detail td,
+.pilot-detail td
+{
+	font-weight: bold;
+	text-align: left;
+}
+
+.alliance-detail td:last-child,
+.corp-detail td:last-child
+{
+	font-weight: normal;
+}
+
+.corp-detail .description
+{
+	height: 100px;
+	overflow: auto;
+	width: 100%;
+}
+
+.pilot-detail.stats > table
+{
+	table-layout: fixed;
+	width: 100%;
+}
+
+.alliance-detail-corps td
+{
+	text-align: center;
+}
+
+.alliance-detail-corps td:first-child,
+.alliance-detail-corps td:last-child
+{
+	text-align: left;
+}
+
+.alliance-detail-corpname
+{
+	width: 200px;
+}
+
+.alliance-detail-ticker
+{
+	width: 60px;
+}
+
+.alliance-detail-members
+{
+	width: 60px;
+}
+
+.alliance-detail-joined
+{
+	width: 90px;
+}
+
+.alliance-detail-tax
+{
+	width: 60px;
+}
+
+.alliance-detail-site
+{
+	width: 257px;
+}
+
+.alliance-detail-corps tr.kb-table-header td
+{
+	font-weight: bold;
+}
+
+.toplist-table
+{
+	border-spacing: 1px;
+width: 100%;
+}
+
+.toplist-table td:first-child
+{
+	padding: 0;
+}
+
+.toplist-table tr
+{
+	height: 32px;
+}
+
+.toplist-table .kb-table-header
+{
+	height: 16px;
+	text-align: center;
+}
+
+.toplist-name
+{
+	width: 200px;
+}
+
+.toplist-rank
+{
+	width: 60px;
+}
+
+.toplist-table td:nth-child(3)
+{
+	text-align: center;
+}
+
+.toplist-table .kb-table-header
+{
+	text-align: center;
+}
+
+.kl-detail-victim > table,
+.kl-detail-vicship > table,
+.kl-detail-inv > table,
+.kl-detail-comments > table
+{
+	border-collapse: separate;
+	width: 100%;
+}
+
+.kl-detail-victim .logo
+{
+	text-align: center;
+	width: 64px;
+}
+
+.kl-detail-victim .logo > img,
+.kl-detail-vicship .logo > img
+{
+	height: 64px;
+	width: 64px;
+}
+
+.kl-detail-victim .attribute-name
+{
+	font-weight: bold;
+	width: 64px;
+}
+
+.kl-detail-victim .attribute-data
+{
+	width: 380px;
+}
+
+.kl-detail-victim td
+{
+	font-weight: bold;
+}
+
+.kl-detail-vicship .logo
+{
+	text-align: center;
+	width: 64px;
+}
+
+.kl-detail-vicship td.logo
+{
+	height: 64px;
+	text-align: center;
+	width: 64px;
+}
+
+.kl-detail-vicship .attribute-name
+{
+	font-weight: bold;
+	width: 118px;
+}
+
+.kl-detail-vicship .attribute-data
+{
+	width: 206px;
+}
+
+.kl-detail-vicship td
+{
+	font-weight: bold;
+}
+
+.kl-detail-vicship td:last-child
+{
+	font-weight: normal;
+}
+
+.kl-detail-inv .logo
+{
+	text-align: center;
+	width: 70px;
+}
+
+.kl-detail-inv .attribute-data
+{
+	width: 274px;
+}
+
+.kl-detail-inv td.logo
+{
+	height: 64px;
+	vertical-align: middle;
+	width: 64px;
+}
+
+.kl-detail-inv td
+{
+	padding: 2px 2px 0px 0px;
+}
+
+.kl-detail-comments-outer
+{
+	text-align: left;
+	vertical-align: top;
+	width: 100%;
+}
+
+.kl-detail-comments-inner
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td.finalblow
+{
+	text-align: center;
+	width: 64px;
+}
+
+.violentsystems td:first-child
+{
+	font-weight: bold;
+	width: 25px;
+}
+
+.violentsystems td:nth-child(2)
+{
+	width: 215px;
+}
+
+.violentsystems td:last-child
+{
+	text-align: center;
+	width: 60px;
+}
+
+.invtype > div
+{
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	width: 360px;
+}
+
+.invtype > div:first-child
+{
+	margin-left: 5px;
+	margin-right: 30px;
+}
+
+.invtype img.logo
+{
+	float: left;
+	height: 64px;
+	margin-right: 10px;
+	width: 64px;
+}
+
+.invtype img.icon
+{
+	height: 32px;
+	width: 32px;
+}
+
+.invtype table.kb-table,
+.kl-detail-shipdetails table.kb-table
+{
+	width: 100%;
+}
+
+.invtype td.description
+{
+	text-align:left !important;
+}
+
+.invtype table.kb-table td:first-child
+{
+	height: 32px;
+	width: 32px;
+}
+
+.invtype table.kb-table td:nth-child(2)
+{
+	font-weight: bold;
+}
+
+.invtype table.kb-table td:last-child
+{
+	text-align: right;
+	width: 100px;
+}
+
+.kl-detail-shipdetails tr.kb-table-row-odd > td:nth-child(3)
+{
+	text-align: center;
+	width: 30px;
+}
+
+.kl-detail-shipdetails tr.kb-table-row-odd > td:last-child
+{
+	text-align: right;
+}
+
+.kl-detail-shipdetails tr.summary
+{
+	text-align: right;
+}
+
+.kl-detail-shipdetails tr.summary.bpo,
+.kl-detail-shipdetails tr.summary.itemdrop,
+.kl-detail-shipdetails tr.dropped
+{
+
+	background: url(images/dropped-green-bg.png) repeat;
+	text-shadow: 1px 1px 1px #6D6D6D;
+font-weight: bold;
+color: #fff;
+}
+
+.kl-detail-shipdetails tr.totalloss
+{
+	background: url(images/destroyed-red-bg.png) repeat;
+	text-shadow: 1px 1px 1px #6D6D6D;
+font-weight: bold;
+color: #fff;
+}
+
+.kl-detail-shipdetails tr.totalloss > td:first-child
+{
+	border: 1px solid #600;
+	font-weight: bold;
+	text-align:right;
+}
+
+.kl-detail-shipdetails tr.totalloss > td:last-child
+{
+	border: 1px solid #C00;
+	text-align:right
+}
+
+.kl-detail-shipdetails tr.summary.bpo td,
+.kl-detail-shipdetails tr.summary.itemdrop td
+{
+	border: 1px solid green;
+}
+
+.kl-detail-shipdetails tr.summary td:first-child
+{
+	font-weight: bold;
+}
+
+.kl-detail-invsum > table.kb-table
+{
+	width: 100%;
+}
+
+.kl-detail-invsum td
+{
+	vertical-align: top;
+}
+
+.kl-detail-invsum td.invcorps,
+.kl-detail-invsum td.invcorps > div.no_stretch
+{
+	width: 210px;
+}
+
+.kl-detail-invsum td.invships,
+.kl-detail-invsum td.invships > div.no_stretch
+{
+	width: 117px;
+}
+
+.fitting-panel > div.fit-module
+{
+	height: 32px;
+	width: 32px;
+	z-index: 2;
+}
+
+.fitting-panel > div.fit-ammo
+{
+	height: 24px;
+	width: 24px;
+	z-index: 3;
+}
+
+.fitting-panel > div
+{
+	position: absolute;
+}
+
+.fitting-panel div.bigship
+{
+	height: 256px;
+	left: 72px;
+	top: 71px;
+	width: 256px;
+	z-index: 0;
+}
+
+.fitting-panel img.bigship
+{
+	height: 256px;
+	width: 256px;
+}
+
+.fitting-panel div.verified
+{
+	height: 16px;
+	left: 382px;
+	top: 0;
+	width: 16px;
+	z-index: 4;
+}
+
+.fitting-panel div.verified > img
+{
+	height: 16px;
+	width: 16px;
+}
+
+.fitting-panel div.fit-slot-bg
+{
+	height: 398px;
+	left: 0;
+	top: 0;
+	width: 398px;
+	z-index: 1;
+}
+
+.kill-related-friendly,
+.kill-related-hostile
+{
+        vertical-align: top;
+	display: inline-block;
+	width: 378px;
+}
+
+.kill-related-friendly > table.kb-table,
+.kill-related-hostile > table.kb-table
+{
+	width: 376px;
+}
+
+.kill-related-friendly .destroyed,
+.kill-related-hostile .destroyed,
+.kill-related-hostile .destroyed a:link,
+.kill-related-hostile .destroyed a:visited
+{
+	background: url(images/destroyed-red-bg.png) repeat!important;
+	text-shadow: 1px 1px 1px #6D6D6D;
+font-weight: bold;
+color: #fff;
+}
+
+.kill-related-friendly tr.kb-table-header > td,
+.kill-related-hostile tr.kb-table-header > td
+{
+	text-align: center;
+}
+
+.kill-related-friendly tr.kb-table-header > td:last-child,
+.kill-related-hostile tr.kb-table-header > td:last-child
+{
+	width: 200px;
+}
+
+.kill-related-stats > table.kb-table
+{
+	width: 100%;
+}
+
+.kill-related-stats > table.kb-table th
+{
+	text-align: left;
+	width: 200px;
+}
+
+.kill-related-stats > table.kb-table td
+{
+	text-align: left;
+}
+
+.kill-related-subsection
+{
+	font-weight:normal!important;
+}
+
+div#owners > div
+{
+	border:2px red solid;
+	display: inline-block;
+	height:228px;
+	margin: 5px;
+	text-align:center;
+	vertical-align:top;
+	width:360px;
+}
+
+div#owners > div > img
+{
+	height:128px;
+	width:128px;
+}
+
+div#owners div.owner-title
+{
+	display: block;
+	font-size: 2em;
+	font-weight: bold;
+	height:70px;
+	margin: 0.5em 0;
+}
+div#searchresults > table
+{
+	width: 450px;
+}
+
+div.login table td:first-child
+{
+	width: 160px; font-weight: bold;
+}
+
+
+
+/***     2. Header     ***/
+#header-wrapper { background:url(images/header-bg.png) repeat-x; height:202px; }
+#header { width:960px; margin:0 auto; position:relative; z-index:2; }
+#logo { position:absolute; top:41px; left:0; height: 106px; }
+#header-banner { position:absolute; right:0; top:63px; }
+#social-media { float:right; padding-top:7px; }
+
+	/*     2.1. Top Navigation     */
+	#top-navigation { height:24px; padding-top:8px; float:left; }
+	#top-navigation li { float:left; display:block; margin-right:20px; text-shadow: 1px 1px 1px #000; position:relative; height:24px; z-index:100; }
+	#top-navigation li a { display:block; color:#7d7d7d; }
+	#top-navigation li:hover { visibility: inherit; /* fixes IE7 'sticky bug' */ }
+	
+	#top-navigation li ul { left:-999px; position:absolute; z-index:1; top:24px; border:1px solid #000; border-top:none; width:140px; background:#121212; }
+	#top-navigation li ul li { float:none; background:url(images/nav-item-bg.png) repeat-x; height:25px; margin:0; padding:9px 0 0 10px; text-shadow: 1px 1px 1px #000; }
+	#top-navigation li ul li a { font-size:12px; }
+	#top-navigation li:hover ul { left:0; }
+	
+	#top-navigation li ul li ul { top:-999px; }
+	#top-navigation li ul li:hover ul { left:140px; top:0; }
+	
+	#top-navigation li ul li ul li ul { top:-999px; }
+	#top-navigation li ul li ul li:hover ul { left:140px; top:0; }
+
+	/*     2.2. Navigation     */
+	#navigation-wrapper { position:absolute; top:156px; width:960px; left:0; }
+	
+	#navigation { height:46px; float:left; }
+	#navigation li { display:block; float:left; margin-right:30px; position:relative; padding-top:13px; height:46px; text-shadow: 1px 1px 1px #000; }
+	#navigation li a { font-size:14px; color:#FFF; font-weight:bold }
+	#navigation li:hover { visibility: inherit; /* fixes IE7 'sticky bug' */ }
+	
+	#navigation li ul { left:-999px; position:absolute; z-index:1; top:45px; border:1px solid #000; border-top:none; width:140px; }
+	#navigation li ul li { float:none; background:url(images/nav-item-bg.png) repeat-x; height:25px; margin:0; padding:9px 0 0 10px; text-shadow: 1px 1px 1px #000; }
+	#navigation li ul li a { font-size:12px; }
+	#navigation li:hover ul { left:0; }
+	
+	#navigation li ul li ul { top:-999px; }
+	#navigation li ul li:hover ul { left:140px; top:0; }
+	
+	#navigation li ul li ul li ul { top:-999px; }
+	#navigation li ul li ul li:hover ul { left:140px; top:0; }
+
+
+/***     4. Main Section     ***/
+#main-wrapper { width:920px; background:#FFF; margin:0 auto; padding:20px; overflow:hidden; }
+#main { width:918px; float:left; }
+.section-title { background:url(images/section-title.png) repeat; padding:9px 9px 6px 9px; margin-bottom:30px; text-shadow: 1px 1px 1px #FFF; font-size:28px; font-family:"BebasNeueRegular"; }
+
+	/*     4.1. News     */
+	#news-wrapper { margin-bottom:24px; }
+	.news-item { border-bottom:1px solid #DDD; margin-bottom:30px; padding-bottom:25px; }
+	.news-thumb-wrapper { position:relative; }
+	.news-thumb-wrapper h1 { position:absolute; color:#FFF; left:40px; top:220px; background:#000; padding:8px 9px 7px 9px; font-size:24px; font-family:BebasNeueRegular; }
+	.news-thumb-wrapper h1 a { color:#FFF; }
+	.news-thumb { border:1px solid #CCC; margin-right:12px; float:left; }
+	.news-arrows { position:absolute; left:0; top:220px; height:44px; width:40px; background:url(images/news-arrows.png) no-repeat; }
+	.news-meta-wrapper { background:url(images/section-title.png) repeat; height:25px; border-bottom:1px solid #CCC; margin-top:-3px; padding:9px 9px 0 9px; margin-bottom:10px; }
+	.news-meta-wrapper span { text-shadow: 1px 1px 1px #FFF; font-weight:bold; text-transform: uppercase; letter-spacing:1px; }
+	.news-meta { color:#777; float:left; }
+	.news-cats { float:right; }
+	.news-item p { line-height:18px; }
+
+/***     6. Footer Section     ***/
+
+	/*     6.1. Footer top     */
+	#footer-top-wrapper { background:url(images/footer-top-bg.png) repeat-x; height:55px; }
+	#footer-top { width:960px; margin:0 auto; padding-top:20px; }
+	#footer-top a { color:#797979; text-shadow: 1px 1px 1px #000; }
+	#footer-navigation li { display:block; float:left; margin-right:10px; }
+	#footer-navigation span { margin-right:10px; }
+	#back-top { float:right; background:url(images/back-top.png) no-repeat right; padding-right:26px; }
+
+	/*     6.2. Footer     */
+	#footer-wrapper { background:url(images/footer-bg.png) repeat; overflow:hidden; padding-bottom:20px; border-bottom:1px solid #000;  }
+	#footer { width:960px; margin:0 auto; padding-top:30px; }
+	.footer-widget { width:225px; }
+	.footer-widget a { color:#888; text-shadow: 1px 1px 1px #000; }
+	.footer-widget p { color:#888; text-shadow: 1px 1px 1px #000; line-height:18px; }
+	.footer-widget.left { float:left; margin-right:20px; }
+	.footer-widget.middle { float:left; margin-right:20px; }
+	.footer-widget.right { float:right; }
+	.footer-widget h3 { color:#FFF; text-shadow: 1px 1px 1px #000; background:url(images/footer-line.png) repeat-x bottom; padding-bottom:6px; margin-bottom:20px; font-size:22px; font-family:"BebasNeueRegular"; }
+	.footer-widget li { margin-bottom:10px; background:url(images/footer-bullet.png) no-repeat left; padding-left:16px; }
+	
+	/*     6.2. Footer bottom    */
+	#footer-bottom-wrapper { height:38px; background:#111; border-top:1px solid #222; }
+	#footer-bottom { width:960px; margin:0 auto; padding-top:11px; }
+	.footer-bottom-left { float:left; text-shadow: 1px 1px 1px #000; }
+	.footer-bottom-right { float:right; text-shadow: 1px 1px 1px #000; }
+
+
+#guest_form {
+	text-align: right;
+}
+#guest_form .info {
+	padding: 6px 0;
+}
+
+#main_body {
+	background: #dedede url(images/main_body.jpg) 0 0 repeat-x fixed;
+}
+#main_body .wrapper {
+	background: #ffffff url(images/main_body_wrap.png) 0 0 repeat-x;
+	padding: 10px 0;
+}
+#inferno_tools {
+	background: #ffffff;
+	margin: 0 6px;
+	height: 40px;
+	overflow: hidden;
+}
+
+#time {
+	padding: 10px 0 0 5px;
+	color: #990000;
+	font-weight: bold;
+}
+#time span {
+	color: #6d6d6d;
+	padding-right: 15px;
+}
+#main_content {
+	padding: 0 8px 5px;
+}
+
+.wrapper {
+width: 990px;
+margin: 0 auto;
+}
+
+.corpkb-table, .corpkb-subtable
+{
+	color: #6d6d6d;
+	font-size: 10px;
+	padding: 0;
+width: 765px;
+}
+
+.corpkb-table
+{
+	border-collapse: separate;
+	border-spacing: 1px;
+	border: 0px solid #ffffff;
+}
+
+input, button, select {
+	font: 95%/115% verdana, Helvetica, sans-serif;
+	color: black;
+	background: white;
+	border: 1px solid #9e9e9e;
+	padding: 2px;
+}
+
+
+
+/***	9. Fontface		***/
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?iefix') format('eot'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#webfont4Bjy2lJe') format('svg');
+    font-weight: normal;
+}
+
+
+ol, ul, li {
+list-style: none;
+}
+
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+margin: 0;
+padding: 0;
+}
+
+.kill-pilot-name
+{
+	background: url(images/section-title.png) repeat;
+	text-shadow: 1px 1px 1px white;
+	font-size: 20px;
+	font-family: "BebasNeueRegular";
+	height: 15px;
+
+}
+
+.kill-pilot-name A:link
+{
+color: #3A3A3A;
+}
+.kill-pilot-name A:visited
+{
+color: #3A3A3A;
+}
+.kill-pilot-name A:active
+{
+color: #3A3A3A;
+}
+.kill-pilot-name A:hover
+{
+color: #3A3A3A;
+}
+
+.the-comment {
+margin-bottom: 24px;
+}
+
+.comment-arrow {
+background: url(images/comment-arrow.png) no-repeat;
+width: 8px;
+height: 15px;
+float: left;
+margin-top: 16px;
+margin-right: -1px;
+}
+
+.comment-box {
+background: url(images/comment-bg.png) repeat-x;
+border: 1px solid 
+#CCC;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+padding: 14px;
+overflow: hidden;
+}
+
+.comment-author {
+margin-bottom: 10px;
+font: 12px Arial, sans-serif;
+}
+
+.comment-text {
+line-height: 18px;
+}
+
+
+#source {
+color: 
+#6D6D6D;
+font-size: 10px;
+}
+
+#kl-detail-comment-list {
+margin-bottom: 30px;
+}
+
+.comment-posted {
+background: url(images/comment-bg.png) repeat-x;
+border: 1px solid 
+#CCC;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+padding: 14px;
+overflow: hidden;
+margin-bottom: 24px;
+margin-right: 10px;
+}
+
+.comment-author small {
+color: 
+#888;
+}
+small {
+font-size: smaller;
+}
+
+
+strong {
+font-weight: bold;
+}
+
+textarea {
+padding: 8px;
+border: 1px solid 
+#D9D9D9;
+margin-right: 12px;
+font-family: Arial;
+}
+
+input[type="submit"] {
+background: url(images/black-button.png) repeat-x;
+border: 1px solid 
+black;
+padding: 5px 5px 3px 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+font-family: "BebasNeueRegular";
+font-size: 16px;
+color: 
+white;
+text-shadow: 1px 1px 1px 
+black;
+cursor: pointer;
+}
+
+input[type="text"], input[type="password"], select, textarea {
+padding: 8px;
+border: 1px solid 
+#D9D9D9;
+margin-right: 12px;
+font-family: Arial;
+}
+
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+margin-top: 8px;
+margin-bottom: 8px;
+}
