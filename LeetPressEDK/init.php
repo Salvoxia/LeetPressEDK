@@ -7,4 +7,4 @@
  * @package EDK
  */
 
-$themeInfo = array("name" => "LeetPress", "info"=>"Theme");
+$themeInfo = array("name" => "LeetPress", "info"=>"Theme by Vecati. Maintained by Salvoxia.");
