@@ -212,7 +212,7 @@ textarea.killmail
 	border-collapse: separate;
 	border-spacing: 0px;
 	border: 0px solid #;
-width: 100%;
+	width: 100%;
 }
 
 .kb-table-title
@@ -227,11 +227,23 @@ width: 100%;
 	color: #3A3A3A;
 	text-shadow: 1px 1px 1px white;
 	font-size: 10px;
-font-weight: bold;
+	font-weight: bold;
 	height: 15px;
 	padding: 4px;
+}
 
+.kb-kl-table-summary
+{
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	height: 15px;
+	padding: 4px;
+}
 
+.kb-kl-summary-cell
+{
+	width: 33%;
 }
 
 .killpilotbg
