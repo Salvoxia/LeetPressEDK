@@ -555,7 +555,8 @@ font-family: Arial;
 .comment-button
 {
 padding: 8px;
-border: 1px solid  
+border: 1px solid 
+ 
 #D9D9D9;
 margin-right: 12px;
 font-family: Arial;
@@ -590,7 +591,8 @@ margin-top: 10px;
 .input-pilotname
 {
 padding: 8px;
-border: 1px solid  
+border: 1px solid 
+ 
 #D9D9D9;
 margin-right: 12px;
 font-family: Arial;
@@ -2104,4 +2106,14 @@ display: block;
 -webkit-margin-end: 0px;
 margin-top: 8px;
 margin-bottom: 8px;
+}
+
+.ssobutton[type="submit"]
+{
+    background : url("https://web.ccpgamescdn.com/eveonlineassets/developers/eve-sso-login-black-small.png") no-repeat center center;
+    border : none;
+    width: 195px;
+    height: 30px;
+    color : transparent;
+    text-shadow: none;
 }
